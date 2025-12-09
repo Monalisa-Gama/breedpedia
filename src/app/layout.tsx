@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,17 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+
+        <main className=" min-h-screen ">
+          <Header />
+          {children}
+        </main>
+       
+        <footer className="bg-black p-10 text-white w-full " >
+          <p className="text-center py-4 text-sm text-zinc-500">
+            &copy; 2024 Raças de Cachorros. Todos os direitos reservados.
+          </p>
+        </footer>
       </body>
     </html>
   );
