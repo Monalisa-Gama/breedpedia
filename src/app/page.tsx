@@ -7,6 +7,7 @@ export default function HomePage({ searchParams }: { searchParams?: { page?: str
       <section >
         {/* resolver problema do parametro de páginas */}
         <ListaCachorro searchParams={Promise.resolve(params)} />
+        <h2>TESTE ITALO</h2>
       </section>
       
     </main>
