@@ -6,6 +6,7 @@ export default function HomePage({ searchParams }: { searchParams?: { page?: str
     <main>
       <section >
         {/* resolver problema do parametro de páginas */}
+        <h1>Branch do Fabio</h1>
         <ListaCachorro searchParams={Promise.resolve(params)} />
       </section>
       
