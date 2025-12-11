@@ -37,6 +37,7 @@ export default function RootLayout({
         <footer className="bg-black p-10 text-white w-full " >
           <p className="text-center py-4 text-sm text-zinc-500">
             &copy; 2024 Raças de Cachorros. Todos os direitos reservados.
+            <span>Versão: 1.0.0 </span>
           </p>
         </footer>
       </body>
