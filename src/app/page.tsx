@@ -4,11 +4,9 @@ export default function HomePage({ searchParams }: { searchParams?: { page?: str
   const params = searchParams ?? { page: '1' };
   return (
     <main>
-      <section >
-        {/* resolver problema do parametro de páginas */}
+      <section >   
         <ListaCachorro searchParams={Promise.resolve(params)} />
-      </section>
-      
+      </section>      
     </main>
   );
 }

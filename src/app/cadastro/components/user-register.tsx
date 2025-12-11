@@ -5,7 +5,7 @@ import Link from "next/link"
 import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
-import { formCadastroScrema, FormCadastroSchema } from "../_schema/form-cadastro-schema"
+import { formCadastroSchema, FormCadastroSchema } from "../_schema/form-cadastro-schema"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -20,7 +20,7 @@ export function UserRegister() {
   const router = useRouter()
 
   const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<FormCadastroSchema>({
-    resolver: zodResolver(formCadastroScrema),
+    resolver: zodResolver(formCadastroSchema),
     mode: "onTouched",
   })
 
