@@ -1,6 +1,6 @@
 import {z} from 'zod';
 
-export const formCadastroScrema = z.object({
+export const formCadastroSchema = z.object({
    
     firstName: z.string().min(2, "O nome deve ter no mínimo 2 caracteres").max(50, "O nome deve ter no máximo 50 caracteres"),
     lastName: z.string().min(2, "O sobrenome deve ter no mínimo 2 caracteres").max(50, "o sobrenome deve ter no máximo 50 caracteres"),
@@ -15,4 +15,4 @@ export const formCadastroScrema = z.object({
 });
 
 
-export type FormCadastroSchema = z.infer<typeof formCadastroScrema>;
+export type FormCadastroSchema = z.infer<typeof formCadastroSchema>;
